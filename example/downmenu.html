@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>down-menu</title>
+    <style>
+        *{margin:0; padding:0;} ul, li{list-style:none;} a{text-decoration:none; color:inherit;}
+        body{
+            width:100%;
+            height:100vh;
+        }
+
+        nav{
+            width:100%;
+            height:100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: lightcoral;
+        }
+
+        nav .menubar{
+            display: flex;
+        }
+
+        nav .menubar .dropdown{
+            margin:0 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+        nav .menubar li a{
+            font-size:20px;
+            display: block;
+        }
+
+        .sub-menu{
+            position: absolute;
+            top:80px;
+            left:10px;
+            display: none;
+        }
+
+        .sub-menu li{
+            display: block;
+            margin-bottom:20px;
+        }
+
+        .menubar:hover .dropdown .sub-menu{
+            display: block;
+        }
+
+     
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>LOGO</h2>
+        <ul class="menubar">
+            <li class="dropdown"><a href="#">MENU1</a>
+            <ul class="sub-menu">
+                <li><a href="#">SUB1</a></li>
+                <li><a href="#">SUB2</a></li>
+                <li><a href="#">SUB3</a></li>
+            </ul>
+            </li>
+            <li class="dropdown"><a href="#">MENU2</a>
+                <ul class="sub-menu">
+                    <li><a href="#">SUB1</a></li>
+                    <li><a href="#">SUB2</a></li>
+                    <li><a href="#">SUB3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">MENU3</a>
+                <ul class="sub-menu">
+                    <li><a href="#">SUB1</a></li>
+                    <li><a href="#">SUB2</a></li>
+                    <li><a href="#">SUB3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">MENU4</a>
+                <ul class="sub-menu">
+                    <li><a href="#">SUB1</a></li>
+                    <li><a href="#">SUB2</a></li>
+                    <li><a href="#">SUB3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">MENU5</a>
+                <ul class="sub-menu">
+                    <li><a href="#">SUB1</a></li>
+                    <li><a href="#">SUB2</a></li>
+                    <li><a href="#">SUB3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
