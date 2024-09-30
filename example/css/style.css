@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }   
+*{margin:0; padding:0;   font-family: 'NanumBarunGothic';} ul, li{list-style:none;} a{text-decoration:none; color: inherit;}
+
+header{width:100%; border-bottom:1px solid #ddd;}
+header .inner {width:1180px; height:120px; margin:0 auto; position: relative;}
+header .inner h1{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+}
+
+header .inner h1 a{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    color: #444;
+}
+
+header .inner .util {
+    position: absolute;
+    top:20px;
+    right: 30px;
+    display: flex;
+    gap:20px;
+}
+
+header .inner .util li a{
+    font-size:12px;
+    line-height: 1;
+    color: #999;
+}
+
+header .inner .gnb{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    display: flex;
+}
+
+header .inner .gnb li a{
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1;
+    color: #555;
+    transition:all .5s;
+    padding:20px 30px;
+}
+
+header .inner .gnb li a:hover{
+    background-color: #555;
+    color: #fff;
+}
+
+figure{
+    width:100%;
+    /*전체 브라우저 높이에서 120px 헤더 만큼 빼줌*/
+    height:calc(100vh - 120px);
+    object-fit: cover; /*영상을 피규어 안쪽에 꽉 차도록 설정*/
+}
+
+.container{
+    box-sizing: border-box;
+    width:100%;
+    height:800px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.container h1{
+    font-size: 80px;
+    color: #444;
+    margin-bottom:10px;
+}
+
+.container p{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.container .txt{
+    position: absolute;
+    top:50%;
+    left:0%;
+    margin-left: 50px;
+}
+
+.container button{
+    width:400px;
+    height:30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #555;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+section{
+    width:100%;
+    padding:200px 0;
+}
+
+section .inner {
+    width:1180px;
+    margin:0 auto;
+}
+
+section .inner h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section .inner .wrap {
+    display: flex;
+    width:100%;
+    gap: 20px;
+}
+
+section .inner .wrap article .pic{
+    width:100%;
+    height:120px;
+    background-color: #333;
+    margin-bottom: 15px;
+}
+
+.wrap article h2{
+    margin-bottom: 10px;
+}
+
+.wrap article a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+}
+
+.wrap article p{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #777;
+}
+section .inner .wrap article .pic img{
+    width:100%;
+    height:100%;
+}
+
+footer{
+    width:100%;
+    background-color: #333;
+    padding: 100px 0;
+    border-top: 1px solid #888;
+}
+
+footer .inner{
+    width:1180px;
+    margin:0 auto;
+}
+
+footer .inner .upper{
+    width:100%;
+    border-bottom: 1px solid #777;
+    padding-bottom:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper ul{
+    display: flex;
+    gap: 20px;
+    color: #666;
+}
+
+.upper h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    color: #666;
+}
+
+.lower{
+    width:100%;
+    padding-top: 20px;
+}
+
+.lower address{
+    font: 12px/1.4 Arial;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.lower p{
+    font:12px/1 Arial;
+    color: #777;
+}

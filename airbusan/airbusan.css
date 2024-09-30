@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+
+*{margin: 0; padding: 0;} ul, li{list-style: none;} a{ text-decoration: none; color: inherit;}
+body .header .infom{
+    width:100%;
+    max-width: 1200px;
+    height:47px;
+    background-color:#2A3692;
+    display: flex;
+    align-items: center;
+    gap:4px;
+    padding: 0 169px;
+    position: relative;
+}
+
+.infom a {
+    color:#ffffff;
+    font-family:"NanumBarunGothic";
+}
+
+.infom p:nth-of-type(1){
+    font-size:14px;
+}
+
+.infom p:nth-of-type(3){
+    font-size:12px;
+}
+
+.infom p:nth-of-type(1)::before{
+    content:"\f0a1";
+    font-family: "Font Awesome 5 Free";
+    color:white;
+    margin:0 10px;
+}
+
+.infom button{
+    background-color: transparent;
+    border:0;
+}
+
+.nav-bar{
+    width:100%;
+    min-width:1300px;
+    display: flex;
+   justify-content: space-between;
+    padding: 15px 50px;
+    position: fixed;
+    background-color: white;
+}
+
+.nav-bar .nav-menu{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-family: "NanumBarunGothic";
+}
+
+.nav-bar .nav-menu a{
+    color:#515151;
+    font-size: 16px;
+}
+
+.nav-bar .log-bar{
+    display: flex;
+    gap:40px;
+    margin-right:170px;
+    font-family: "NanumBarunGothic";
+    color:#515151;
+    align-items: center;
+}
+
+.nav-bar .log-bar li{
+    background-color:#f5f5f5;
+    width:70px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius:6px;
+}
